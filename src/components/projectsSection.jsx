@@ -7,8 +7,8 @@ const projects = [
   description:"A responsive school management system built with React JS.",
   image:"/projects/project1.png",
   tags:["React","Material-UI","Javascript"],
-  demoUrl:"#",
-  githubUrl:"#",
+  demoUrl:"/NotFound.jsx",
+  githubUrl:"/NotFound.jsx",
  },
  {
   id: 2,
@@ -16,8 +16,8 @@ const projects = [
   description:"A personal website showcasing my skills and projects.",
   image:"/projects/project2.png",
   tags:["React","TailwindCss","Javascript"],
-  demoUrl:"#",
-  githubUrl:"#",
+  demoUrl:"https://adityakrshah.vercel.app/",
+  githubUrl:"https://github.com/Adityakrshah/Aditya-portfolio",
  },
 //  {
 //   id: 3,

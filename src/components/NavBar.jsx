@@ -14,16 +14,17 @@ const NavBar = () => {
     const[ismenuopen,setIsmenuopen] = useState(false);
     
 
-    useEffect(()=>{
+useEffect(()=>{
 const handlescroll = () =>{
-    setIsscrolled(window.screenY>10)
+    console.log(window.scrollY);
+    setIsscrolled(window.scrollY>10);
 };
 
 window.addEventListener("scroll",handlescroll)
 return()=>window.removeEventListener("scroll",handlescroll)
     },[])
   return (
-    <nav className={cn("fixed  w-full z-40 transition-all duration-300 bg-background/80 backdrop-blur-md shadow-xs", isscrolled? "py-3" : "py-5" )}>
+    <nav className={cn("fixed  w-full z-40 transition-all duration-300 ", isscrolled? " bg-background/90 backdrop-blur-md shadow-xs py-3" : "py-5" )}>
         <div className="container flex items-center justify-between">
             <a className='text-xl font-bold text-primary flex items-center' href='#hero'>
                 <span className='relative z-10'>
@@ -45,7 +46,7 @@ return()=>window.removeEventListener("scroll",handlescroll)
             {/* Mobile */}
 
             <button onClick={()=>setIsmenuopen((prev)=>!prev)} 
-                className='fixed top-4 right-10 z-50 p-2 text-foreground md:hidden'
+                className='md:hidden p-1 text-foreground z-50 '
                 aria-label={ismenuopen ? "Close Menu": "Open Menu"}
             >
             {ismenuopen ? <X size={24}/> : <Menu size ={24}/>}{" "}</button>
@@ -55,7 +56,7 @@ return()=>window.removeEventListener("scroll",handlescroll)
             )}>
              <div className='flex flex-col space-y-8 text-xl'>
                 {navItems.map((item,key)=>(
-                    <a key={key} href={item.href} className='text-foreground/80 hover:text-primary transition-colors duration-300'> 
+                    <a key={key} href={item.href} className='text-foreground/80 hover:text-primary transition-colors duration-300'onClick={() => setIsmenuopen(false)}> 
                         {item.name}
                     </a>
                 ))}

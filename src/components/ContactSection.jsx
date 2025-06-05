@@ -41,7 +41,7 @@ useEffect(() => {
         </h2>
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto'>
             Have a project, idea, or just want to connect? 
-            I'm always open to meaningful conversations — 
+            I'm always open to meaningful conversations 
             whether it's a question, collaboration, or a 
             simple hello, feel free to reach out!
         </p>

@@ -12,10 +12,10 @@ const About = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
                 <div className='space-y-6'>
                     <h3 className='text-2xl font-semibold'>
-                    Passionate Web Developer 
+                     Web Developer 
                     </h3>
                     <p className='text-muted-foreground'>
-                        I'm a passionate web developer specializing in front-end development. 
+                        I'm a    web developer specializing in front-end development. 
                         I enjoy building responsive, interactive websites that offer smooth and 
                         engaging user experiences. I focus on clean code, good design, and 
                         responsive layouts.

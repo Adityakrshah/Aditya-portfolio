@@ -2,7 +2,7 @@ import React from 'react'
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <div className='font-semibold text-primary text-xl'>Comming Soon!!</div>
   )
 }
 
