@@ -1,12 +1,26 @@
-# React + Vite
+# Aditya Kumar Shah Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built with React and Vite. It showcases my projects, skills, and ways to get in touch.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design with Tailwind CSS  
+- Contact form integrated with Formspree for real-time validation and submission  
+- Toast notifications to confirm message submission  
+- Contact information with clickable email, phone, and social links  
+- Clean, modern UI with accessible form inputs  
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React  
+- Vite  
+- Tailwind CSS  
+- Formspree for contact form backend  
+- Lucide-react for icons  
+- Radix UI Toast for notifications  
+
+## How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/your-portfolio.git
