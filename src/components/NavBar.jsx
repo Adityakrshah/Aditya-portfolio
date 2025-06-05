@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import{ useEffect, useState } from 'react'
 import cn from '../lib/utils'
 import { X,Menu} from 'lucide-react';
 
@@ -23,7 +23,7 @@ window.addEventListener("scroll",handlescroll)
 return()=>window.removeEventListener("scroll",handlescroll)
     },[])
   return (
-    <nav className={cn("fixed  bg-background/95 backdrop-blur-md w-full z-40 transition-all duration-300", isscrolled? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5" )}>
+    <nav className={cn("fixed  w-full z-40 transition-all duration-300 bg-background/80 backdrop-blur-md shadow-xs", isscrolled? "py-3" : "py-5" )}>
         <div className="container flex items-center justify-between">
             <a className='text-xl font-bold text-primary flex items-center' href='#hero'>
                 <span className='relative z-10'>
@@ -45,7 +45,7 @@ return()=>window.removeEventListener("scroll",handlescroll)
             {/* Mobile */}
 
             <button onClick={()=>setIsmenuopen((prev)=>!prev)} 
-                className='md:hidden p-2 text-foreground z-50'
+                className='fixed top-4 right-10 z-50 p-2 text-foreground md:hidden'
                 aria-label={ismenuopen ? "Close Menu": "Open Menu"}
             >
             {ismenuopen ? <X size={24}/> : <Menu size ={24}/>}{" "}</button>
