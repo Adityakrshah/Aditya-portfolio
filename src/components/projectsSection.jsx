@@ -19,15 +19,16 @@ const projects = [
   demoUrl:"https://adityakrshah.vercel.app/",
   githubUrl:"https://github.com/Adityakrshah/Aditya-portfolio",
  },
-//  {
-//   id: 3,
-//   title:"AAAJMV",
-//   description:"",
-//   image:"/projects/project1.png",
-//   tags:["React","Material-UI","Javascript"],
-//   demoUrl:"#",
-//   githubUrl:"#",
-//  }
+ {
+  id: 3,
+  title: "StoryGenix",
+  description: "StoryGenix is a full-stack AI web application that generates cinematic storytelling scripts from user prompts using AI.",
+  image: "/projects/project3.png", 
+  tags: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Groq AI"],
+  demoUrl: "https://story-genix.vercel.app/",
+  githubUrl: "https://github.com/Adityakrshah/StoryGenix"
+}
+
 ];
 
 const projectsSection = () => {
@@ -66,6 +67,7 @@ const projectsSection = () => {
                   </a>
                 </div>
               </div>
+              
               </div>
             </div>
           ))}
