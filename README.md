@@ -23,4 +23,4 @@ This is my personal portfolio website built with React and Vite. It showcases my
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-portfolio.git
+   git clone git@github.com:Adityakrshah/Aditya-portfolio.git
